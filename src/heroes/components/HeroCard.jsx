@@ -4,9 +4,10 @@ import { Link } from 'react-router-dom';
 
 const CharactesByHero = ({ alter_ego, characters }) =>{
 
-    if( alter_ego === characters ) return (<></>);
+    /*if( alter_ego === characters ) return (<></>);
+    return <p>{ characters }</p>¨*/
 
-    return <p>{ characters }</p>
+    return ( alter_ego === characters ? <></> : <p>{ characters }</p>)
 }
 
 
